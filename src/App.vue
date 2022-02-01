@@ -1,0 +1,39 @@
+<template>
+  <body>
+    <header>
+      <img alt="Vue logo" src="./assets/logo.png">
+    </header>
+    <Calculator />
+  </body>
+</template>
+
+<script>
+import Calculator from './components/YourCalculator.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Calculator,
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+header {
+  background-color: lightgray;
+}
+
+body {
+  background-color: white;
+}
+
+</style>
