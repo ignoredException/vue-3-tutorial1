@@ -1,9 +1,5 @@
 <template>
     <div class="content">
-        <div class="nav">
-            <a class="active" href="calculator-site.vue">Calculator</a>
-            <a href="calculator-site.vue">Test</a>
-        </div>
         <body>
             &nbsp;
             <h1>Your Calculator</h1>
@@ -109,10 +105,10 @@
 
 .content body {
     background-color: deepskyblue;
-}
-
-.nav body {
-    background-color: deepskyblue;
+    width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px 15px 5px 30px;
 }
 
 input {
@@ -128,30 +124,6 @@ button {
 p {
     font-family: Arial;
     font-size: 20px;
-}
-
-.nav {
-    background-color: gray;
-    overflow: hidden;
-}
-
-.nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.nav a:hover {
-    background-color: gray;
-    color: black;
-}
-
-.nav a.active {
-    background-color: darkcyan;
-    color: white;
 }
 
 </style>
