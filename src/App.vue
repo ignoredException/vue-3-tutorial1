@@ -5,8 +5,18 @@
     </header>
     <div class="center">
       <div class="nav">
-        <a class="active" href="home-site.vue">Home</a>
-        <a href="calculator-site.vue">Calculator</a>
+        <a class="active" href="./">Home</a>
+        <div class="dropdown">
+          <button class="dropdown-button">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="">Drop 1</a>
+            <a href="">Drop 2</a>
+            <a href="">Drop 3</a>
+          </div>
+        </div>
+        <a href="">Navbar 3</a>
+        <a href="">Navbar 4</a>
+        <a href="">Navbar 5</a>
       </div>        
     </div>
     <Home />
@@ -73,13 +83,52 @@ header {
 }
 
 .nav a:hover {
-    background-color: gray;
-    color: black;
+    background-color: lightgray;
+    color: white;
 }
 
 .nav a.active {
     background-color: darkcyan;
     color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.dropdown-button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 100px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray;
+  min-width: 74%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+   background-color: lightgray;
 }
 
 </style>
