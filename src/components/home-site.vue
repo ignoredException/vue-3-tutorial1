@@ -1,47 +1,13 @@
 <template>
     <div class="content">
         <div class="nav">
-            <a class="active" href="YourCalculator.vue">Calculator</a>
-            <a href="YourCalculator.vue">Test</a>
+            <a class="active" href="home-site.vue">Home</a>
+            <a href="calculator-site.vue">Calculator</a>
         </div>
         <body>
             &nbsp;
-            <h1>Your Calculator</h1>
-            <p>Here you can see your calculators..<br>
-            You can <b>add</b>, <b>subtract</b>, <b>multiply</b> and <b>divide</b>.
-            </p>
-            &nbsp;
-            <h3>Add:</h3>
-            <form v-on:submit.prevent="add">
-                <input type="number" v-model="add_num1">
-                <input type="number" v-model="add_num2">
-                <button type="submit">Solve</button>
-            </form>
-            <p>Result: {{ add_sum }}</p>
-            &nbsp;
-            <h3>Subtract:</h3>
-            <form v-on:submit.prevent="subtract">
-                <input type="number" v-model="sub_num1">
-                <input type="number" v-model="sub_num2">
-                <button type="submit">Solve</button>
-            </form>
-            <p>Result: {{ sub_sum }}</p>
-            &nbsp;
-            <h3>Multiply:</h3>
-            <form v-on:submit.prevent="multiply">
-                <input type="number" v-model="mul_num1">
-                <input type="number" v-model="mul_num2">
-                <button type="submit">Solve</button>
-            </form>
-            <p>Result: {{ mul_sum }}</p>
-            &nbsp;
-            <h3>Divide:</h3>
-            <form v-on:submit.prevent="divide">
-                <input type="number" v-model="div_num1">
-                <input type="number" v-model="div_num2">
-                <button type="submit">Solve</button>
-            </form>
-            <p>Result: {{ div_sum }}</p>
+            <h1>Home</h1>
+            <p>Welcome on the Homepage!</p>
             &nbsp;
         </body>
     </div>

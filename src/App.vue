@@ -3,17 +3,17 @@
     <header>
       <img alt="Vue logo" src="./assets/logo.png">
     </header>
-    <Calculator />
+    <Home />
   </body>
 </template>
 
 <script>
-import Calculator from './components/YourCalculator.vue'
+import Home from './components/home-site.vue'
 
 export default {
   name: 'App',
   components: {
-    Calculator,
+    Home,
   }
 }
 </script>
