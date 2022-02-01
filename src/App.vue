@@ -3,10 +3,12 @@
     <header>
       <img alt="Vue logo" src="./assets/logo.png">
     </header>
-    <div class="nav">
-      <a class="active" href="home-site.vue">Home</a>
-      <a href="calculator-site.vue">Calculator</a>
-    </div>    
+    <div class="center">
+      <div class="nav">
+        <a class="active" href="home-site.vue">Home</a>
+        <a href="calculator-site.vue">Calculator</a>
+      </div>        
+    </div>
     <Home />
   </body>
 </template>
@@ -40,16 +42,25 @@ header {
 
  body {
   background-color: white;
+  background-position: middle;
+  background-size: cover;
+  background-attachment: fixed;
   background-image: url("https://i.pinimg.com/originals/0b/87/b8/0b87b83c20672d122f3fea5e220bcec0.jpg");
 }
 
-.nav body {
-    background-color: deepskyblue;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
 }
 
 .nav {
     background-color: gray;
-    overflow: hidden;
+    overflow: lightgray;    
+    width: 87%;
+    padding: 0px;
+    background-image: none;
 }
 
 .nav a {
