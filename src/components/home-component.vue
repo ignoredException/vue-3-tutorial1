@@ -16,6 +16,11 @@
 
 .content body {
     background-color: deepskyblue;
+    background-image: none;
+    width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px 15px 5px 30px;
 }
 
 p {

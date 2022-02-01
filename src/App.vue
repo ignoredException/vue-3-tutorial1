@@ -1,26 +1,23 @@
 <template>
-  <header>
-    <img alt="Vue logo" src="./assets/logo.png">
-  </header>
-  <body>
+  <body>  
+    <header>
+      <img alt="Vue logo" src="./assets/logo.png">
+    </header>
     <div class="nav">
-      <a class="active" href="calculator-site.vue">Calculator</a>
-      <a href="calculator-site.vue">Test</a>
+      <a class="active" href="home-site.vue">Home</a>
+      <a href="calculator-site.vue">Calculator</a>
     </div>    
     <Home />
-    <Calculator />
   </body>
 </template>
 
 <script>
 import Home from './components/home-component.vue'
-import Calculator from './components/calculator-component.vue'
 
 export default {
   name: 'App',
   components: {
     Home,
-    Calculator,
   }
 }
 </script>
@@ -36,14 +33,14 @@ export default {
 }
 
 header {
-  background-color: lightgray;
-  size: 100%;
-  margin: 0px;
-  padding: 0px;
+  background: transparent;
+  margin: 50px;
+  padding: 10px;
 }
 
-body {
+ body {
   background-color: white;
+  background-image: url("https://i.pinimg.com/originals/0b/87/b8/0b87b83c20672d122f3fea5e220bcec0.jpg");
 }
 
 .nav body {
